@@ -23,7 +23,14 @@ repositories {
 }
 
 dependencies {
-    implementation ("io.insert-koin:koin-ktor:3.0.2")
+    implementation("io.insert-koin:koin-ktor:3.0.2")
+    implementation("org.litote.kmongo:kmongo:4.2.7")
+    implementation("com.apurebase:kgraphql:0.17.8")
+    implementation("com.apurebase:kgraphql-ktor:0.17.8")
+    implementation("io.ktor:ktor-auth:1.6.0")
+    implementation("io.ktor:ktor-auth-jwt:1.6.0")
+    implementation("at.favre.lib:bcrypt:0.9.0")
+
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version")
     implementation("io.ktor:ktor-server-netty:$ktor_version")
     implementation("ch.qos.logback:logback-classic:$logback_version")
