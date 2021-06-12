@@ -1,6 +1,3 @@
-import org.jetbrains.kotlin.gradle.dsl.Coroutines
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-
 val logback_version: String by project
 val ktor_version: String by project
 val kotlin_version: String by project
@@ -33,10 +30,9 @@ repositories {
 }
 
 dependencies {
+    implementation("io.ktor:ktor-gson:1.6.0")
     implementation("io.insert-koin:koin-ktor:3.0.2")
     implementation("org.litote.kmongo:kmongo:4.2.7")
-    implementation("com.apurebase:kgraphql:0.17.8")
-    implementation("com.apurebase:kgraphql-ktor:0.17.8")
     implementation("io.ktor:ktor-auth:1.6.0")
     implementation("io.ktor:ktor-auth-jwt:1.6.0")
     implementation("at.favre.lib:bcrypt:0.9.0")
