@@ -10,6 +10,16 @@ plugins {
     kotlin("jvm") version "1.4.32"
 }
 
+tasks {
+    compileKotlin {
+        kotlinOptions.jvmTarget = "1.8"
+    }
+
+    compileTestKotlin {
+        kotlinOptions.jvmTarget = "1.8"
+    }
+}
+
 group = "com.example.kmm"
 version = "0.0.1-SNAPSHOT"
 
